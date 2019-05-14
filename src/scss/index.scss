@@ -1,18 +1,33 @@
-@import "~normalize.css/normalize.css";
+@import '~normalize.css/normalize.css';
 
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Fira+Sans');
 
-$primary-color: #0752DE;
+$primary-color: #0752de;
 $secondary-color: #023491;
-$accent-color: #B3001B;
+$accent-color: #b3001b;
 $tertiary-color: #262626;
-$quaternary-color: #255C99;
+$quaternary-color: #255c99;
 $text-primary-color: #fff;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
 
 .header {
   display: grid;
   grid-template-rows: 76px auto;
-  background-image: linear-gradient(to bottom, #0652dd, #054fd5, #054ccc, #0549c4, #0546bc);
+  background-image: linear-gradient(
+    to bottom,
+    #0652dd,
+    #054fd5,
+    #054ccc,
+    #0549c4,
+    #0546bc
+  );
 }
 
 .header__nav {
@@ -24,11 +39,11 @@ $text-primary-color: #fff;
 
 .header__site-logo {
   grid-column: 1 / 2;
-  margin: 0 50px;
+  margin: 0 5rem;
 }
 
 .header__site-logo-permalink {
-  font-size: 30px;
+  font-size: 2.3rem;
   font-weight: 400;
   font-family: 'Bowlby One SC', cursive;
   color: $text-primary-color;
@@ -45,15 +60,16 @@ $text-primary-color: #fff;
 .header__menu-item {
   font-weight: 400;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 25px;
+  font-size: 1.75rem;
   text-transform: uppercase;
   display: inline-block;
-  margin: 0 40px 0 0;
+  margin: 0 4rem 0 0;
 }
 
 .header__menu-item-link {
-  color: #E9E9E9;
+  color: #e9e9e9;
   text-decoration: none;
+  transition: 0.2s color;
 
   &:hover {
     color: $text-primary-color;
@@ -67,12 +83,27 @@ $text-primary-color: #fff;
 .header__links-menu {
   @extend .header__menu;
   grid-column: 3 / 4;
+  justify-self: end;
+  margin: 0 2rem 0 0;
 }
 
 .header__links-menu-item {
   @extend .header__menu-item;
+  margin: 0 3rem 0 0;
 }
 
 .header__links-menu-item-link {
   @extend .header__menu-item-link;
+  display: block;
+}
+
+.header__links-menu-item-icon {
+  width: 32px;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.header__links-menu-item-text {
+  margin: 0 0 0 1rem;
 }
