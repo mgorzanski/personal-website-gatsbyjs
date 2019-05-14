@@ -1,1 +1,78 @@
 @import "~normalize.css/normalize.css";
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Fira+Sans');
+
+$primary-color: #0752DE;
+$secondary-color: #023491;
+$accent-color: #B3001B;
+$tertiary-color: #262626;
+$quaternary-color: #255C99;
+$text-primary-color: #fff;
+
+.header {
+  display: grid;
+  grid-template-rows: 76px auto;
+  background-image: linear-gradient(to bottom, #0652dd, #054fd5, #054ccc, #0549c4, #0546bc);
+}
+
+.header__nav {
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: max-content auto auto;
+  line-height: 76px;
+}
+
+.header__site-logo {
+  grid-column: 1 / 2;
+  margin: 0 50px;
+}
+
+.header__site-logo-permalink {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Bowlby One SC', cursive;
+  color: $text-primary-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__menu {
+  grid-column: 2 / 3;
+  list-style: none;
+  margin: 0;
+}
+
+.header__menu-item {
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 40px 0 0;
+}
+
+.header__menu-item-link {
+  color: #E9E9E9;
+  text-decoration: none;
+
+  &:hover {
+    color: $text-primary-color;
+  }
+
+  &--active {
+    color: $text-primary-color;
+  }
+}
+
+.header__links-menu {
+  @extend .header__menu;
+  grid-column: 3 / 4;
+}
+
+.header__links-menu-item {
+  @extend .header__menu-item;
+}
+
+.header__links-menu-item-link {
+  @extend .header__menu-item-link;
+}
