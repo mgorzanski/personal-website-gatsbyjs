@@ -1,6 +1,7 @@
 @import '~normalize.css/normalize.css';
 
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Fira+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300');
 
 $primary-color: #0752de;
 $secondary-color: #023491;
@@ -106,4 +107,40 @@ body {
 
 .header__links-menu-item-text {
   margin: 0 0 0 1rem;
+}
+
+.header__jumbotron {
+  margin: 9rem 19rem 5.5rem;
+}
+
+.header__jumbotron-inner {
+  border: 5px solid #fff;
+  padding: 2rem;
+  height: 38rem;
+}
+
+.header__jumbotron-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 6.5rem;
+  color: $text-primary-color;
+  margin: 0 0 0.5rem;
+  padding: 0;
+}
+
+.header__jumbotron-subtitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+  color: $text-primary-color;
+  line-height: 2.3rem;
+}
+
+.header__jumbotron-text {
+  @extend .header__jumbotron-subtitle;
+}
+
+.header__jumbotron-icon {
+  margin: 5.5rem 0 0;
+  text-align: center;
 }

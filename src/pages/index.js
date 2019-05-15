@@ -4,7 +4,7 @@ import './../scss/index.scss';
 
 import PolandFlagIcon from './../images/icons/poland-flag.png';
 
-const IndexPage = () => (
+export default () => (
   <>
     <header className="header">
       <nav className="header__nav">
@@ -73,8 +73,34 @@ const IndexPage = () => (
           </li>
         </ul>
       </nav>
+      <div className="header__jumbotron">
+        <div className="header__jumbotron-inner">
+          <h1 className="header__jumbotron-title">
+            Front-end and React/React Native Developer
+          </h1>
+          <h4 className="header__jumbotron-subtitle">
+            Programmer | Student | Aspiring Software Developer
+          </h4>
+          <span className="header__jumbotron-text">
+            My name is Mateusz. I build websites and apps.
+          </span>
+        </div>
+
+        <div className="header__jumbotron-icon">
+          <a href="#about">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="42"
+              height="42"
+              transform="rotate(90)"
+              fill="#fff"
+              viewBox="0 0 24 24"
+            >
+              <path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z" />
+            </svg>
+          </a>
+        </div>
+      </div>
     </header>
   </>
 );
-
-export default IndexPage;
