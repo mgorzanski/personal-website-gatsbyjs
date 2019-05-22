@@ -23,7 +23,7 @@ export default () => (
             </Link>
           </li>
           <li className="header__menu-item">
-            <a className="header__menu-item-link" href="#about">
+            <a className="header__menu-item-link" href="#about-me">
               About
             </a>
           </li>
@@ -51,7 +51,7 @@ export default () => (
                 alt="Flaga polski"
                 className="header__links-menu-item-icon"
               />
-              <span className="header__links-menu-item-text">
+              <span className="header__links-menu-item-text" lang="pl">
                 Zmień na polski
               </span>
             </Link>
@@ -87,7 +87,7 @@ export default () => (
         </div>
 
         <div className="header__jumbotron-icon">
-          <a href="#about">
+          <a href="#about-me">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="42"
@@ -102,5 +102,16 @@ export default () => (
         </div>
       </div>
     </header>
+
+    <main className="main">
+      <section className="section" id="about-me">
+        <h3 className="section__title">About me</h3>
+        <div className="section__columns">
+          <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <img src="#" alt="#" /></p>
+        </div>
+      </section>
+    </main>
   </>
 );
