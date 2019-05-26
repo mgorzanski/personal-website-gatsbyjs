@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import './../scss/index.scss';
 
 import PolandFlagIcon from './../images/icons/poland-flag.png';
 
-export default () => (
+const jobOffers = true;
+
+export default ({ data }) => (
   <>
     <header className="header">
       <nav className="header__nav">
@@ -105,13 +108,25 @@ export default () => (
 
     <main className="main">
       <section className="section" id="about-me">
-        <h3 className="section__title">About me</h3>
-        <div className="section__columns">
-          <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <img src="#" alt="#" /></p>
+        <div className="section__inner">
+          <h3 className="section__title">About me</h3>
+          <div className="section__columns">
+            <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <img src="#" alt="#" /></p>
+          </div>
         </div>
+        { jobOffers && (<div className="section__fs-container">
+          <div className="section__fs-inner">
+            <h2 className="section__fs-title">Job offers</h2>
+            <p className="section__fs-text">Currently I'm looking for a job as a Front-end developer, React/React Native developer, JavaScript developer or similar. If you think I'm the right candidate let me know. <span className="text-important"><a href="#contact">Contact me</a></span>. Need to be near Kraków or remote only.</p>
+          </div>
+        </div>) }
       </section>
+
+
     </main>
   </>
 );
+
+//export const query = graphql``;
