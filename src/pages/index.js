@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import './../scss/index.scss';
+import thumbnail from './../images/thumbnail.png';
 
 import PolandFlagIcon from './../images/icons/poland-flag.png';
 
@@ -111,20 +112,94 @@ export default ({ data }) => (
         <div className="section__inner">
           <h3 className="section__title">About me</h3>
           <div className="section__columns">
-            <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p className="section__column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <img src="#" alt="#" /></p>
+            <p className="section__column">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p className="section__column">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p className="section__column">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad <img src="#" alt="#" />
+            </p>
           </div>
         </div>
-        { jobOffers && (<div className="section__fs-container">
-          <div className="section__fs-inner">
-            <h2 className="section__fs-title">Job offers</h2>
-            <p className="section__fs-text">Currently I'm looking for a job as a Front-end developer, React/React Native developer, JavaScript developer or similar. If you think I'm the right candidate let me know. <span className="text-important"><a href="#contact">Contact me</a></span>. Need to be near Kraków or remote only.</p>
+        {jobOffers && (
+          <div className="section__fs-container">
+            <div className="section__fs-inner">
+              <h2 className="section__fs-title">Job offers</h2>
+              <p className="section__fs-text">
+                Currently I'm looking for a job as a Front-end developer,
+                React/React Native developer, JavaScript developer or similar.
+                If you think I'm the right candidate let me know.{' '}
+                <span className="text-important">
+                  <a href="#contact">Contact me</a>
+                </span>
+                . Need to be near Kraków or remote only.
+              </p>
+            </div>
           </div>
-        </div>) }
+        )}
       </section>
 
-
+      <section className="section" id="resume">
+        <div className="section__left-float-featured-image">
+          <img src={thumbnail} alt="#" className="section__float-image" />
+        </div>
+        <div className="section__inner section__inner--left-float">
+          <h3 className="section__title">Resume</h3>
+          <table className="section__table">
+            <tr>
+              <td><th>Skills</th></td>
+              <td>
+              Tworzenie aplikacji internetowych z wykorzystaniem biblioteki React
+<br />Tworzenie aplikacji mobilnych z wykorzystaniem biblioteki React Native
+<br />Podstawowa znajomość systemu kontroli wersji GIT
+<br />Umiejętność posługiwania się menedżerami pakietów NPM i Yarn oraz menedżerem zadań Webpack
+<br />JavaScript
+<br />Podstawowa znajomość Redux i GraphQL
+<br />Podstawowa znajomość C++
+<br />Podstawowa znajomość PHP i MySQL
+<br />Tworzenie responsywnych stron internetowych z wykorzystaniem HTML5 i CSS3
+<br />Podstawowa znajomość Node.js i MongoDB
+<br />Podstawowa znajomość Linux Bash
+<br />Język angielski – poziom średniozaawansowany
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <th>Achievements</th>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <th>Education</th>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <th>Courses and trainings</th>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </section>
     </main>
   </>
 );
