@@ -309,6 +309,30 @@ export default ({ data }) => (
         </div>
         </a>
       </section>
+
+      <section className="section" id="contact">
+        <div className="section__inner">
+          <h3 className="section__title">Contact</h3>
+        </div>
+
+        <div className="section__fs-container">
+          <div className="section__fs-inner">
+            <h4 className="section__fs-heading">Contact informations</h4>
+            <p className="section__fs-text">If you want to talk with me look no further.</p>
+            <span className="contact-informations">
+              <span>Email</span>
+              gorzanski.mateusz@gmail.com
+              <span>Phone</span>
+              +48 537 743 753
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <span className="footer__copyright">Copyright &copy; 2019 Mateusz Górzański</span>
+        <span className="footer__right">Running on <a href="https://www.gatsbyjs.org/">GatsbyJS</a></span>
+      </footer>
     </main>
   </>
 );
