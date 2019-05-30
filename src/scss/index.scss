@@ -503,6 +503,10 @@ a {
   @extend .footer__copyright;
 }
 
-.footer__right a {
+.footer__right a:link, .footer__right a:visited {
   color: $text-primary-color;
+}
+
+.footer__right a:hover {
+  color: #ddd;
 }

@@ -168,6 +168,7 @@ export default ({ data }) => (
         <div className="section__inner section__inner--left-float">
           <h3 className="section__title">Resume</h3>
           <table className="section__table">
+            <tbody>
             <tr>
               <th>Skills</th>
 
@@ -243,6 +244,7 @@ export default ({ data }) => (
                 Automate Daily Development Tasks with Bash (Egghead)
               </td>
             </tr>
+            </tbody>
           </table>
         </div>
       </section>
