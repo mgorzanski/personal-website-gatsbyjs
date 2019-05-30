@@ -169,9 +169,9 @@ export default ({ data }) => (
           <h3 className="section__title">Resume</h3>
           <table className="section__table">
             <tr>
-              <td>
+              
                 <th>Skills</th>
-              </td>
+              
               <td>
                 Tworzenie aplikacji internetowych z wykorzystaniem biblioteki
                 React
@@ -203,21 +203,21 @@ export default ({ data }) => (
               </td>
             </tr>
             <tr>
-              <td>
+              
                 <th>Achievements</th>
-              </td>
+              
               <td />
             </tr>
             <tr>
-              <td>
+              
                 <th>Education</th>
-              </td>
+              
               <td />
             </tr>
             <tr>
-              <td>
+              
                 <th>Courses and trainings</th>
-              </td>
+              
               <td />
             </tr>
           </table>
