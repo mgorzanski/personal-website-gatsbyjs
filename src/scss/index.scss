@@ -237,13 +237,19 @@ body {
 
   tr {
     td {
-      border: 0;
+      border-bottom: 1px solid #dddddd;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       font-size: 2rem;
-      line-height: 2.3rem;
+      line-height: 3rem;
       color: #000;
       vertical-align: top;
+      padding: 1rem;
+
+      span {
+        font-weight: 400;
+        text-transform: uppercase;
+      }
     }
 
     th {

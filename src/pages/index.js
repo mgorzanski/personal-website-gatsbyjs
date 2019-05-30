@@ -169,56 +169,79 @@ export default ({ data }) => (
           <h3 className="section__title">Resume</h3>
           <table className="section__table">
             <tr>
-              
-                <th>Skills</th>
-              
+              <th>Skills</th>
+
               <td>
-                Tworzenie aplikacji internetowych z wykorzystaniem biblioteki
-                React
+                Creating web applications using React library
                 <br />
-                Tworzenie aplikacji mobilnych z wykorzystaniem biblioteki React
-                Native
+                Creating mobile applications using React Native library
                 <br />
-                Podstawowa znajomość systemu kontroli wersji GIT
+                Basic knowledge of GIT version control system
                 <br />
-                Umiejętność posługiwania się menedżerami pakietów NPM i Yarn
-                oraz menedżerem zadań Webpack
+                Ability to use package managers such as NPM and Yarn as well as
+                task manager Webpack
                 <br />
                 JavaScript
                 <br />
-                Podstawowa znajomość Redux i GraphQL
+                Basic knowledge of Redux and GraphQL
                 <br />
-                Podstawowa znajomość C++
+                Familiar with C++
                 <br />
-                Podstawowa znajomość PHP i MySQL
+                Familiar with PHP
                 <br />
-                Tworzenie responsywnych stron internetowych z wykorzystaniem
-                HTML5 i CSS3
+                Familiar with MySQL and PostgreSQL
                 <br />
-                Podstawowa znajomość Node.js i MongoDB
+                Creating responsive websites using HTML5 and CSS3
                 <br />
-                Podstawowa znajomość Linux Bash
+                Basic knowledge of Node.js and MongoDB
                 <br />
-                Język angielski – poziom średniozaawansowany
+                Familiar with Linux Bash
+                <br />
+                English - intermediate level
               </td>
             </tr>
             <tr>
-              
-                <th>Achievements</th>
-              
-              <td />
+              <th>Achievements</th>
+
+              <td>
+                <span>Finalist in 7th edition</span> of Polish nationwide
+                computer science competition{' '}
+                <span>PING – Potyczki Informatyczne Nowej Generacji</span>
+                <br />
+                organised by West Pomeranian University of Technology in
+                Szczecin
+                <br />
+                <span>4th place, honourable mention</span> in XIV Polish
+                nationwide computer science competition
+                <br />
+                organised by The College of Tourism and Ecology in Sucha
+                Beskidzka
+              </td>
             </tr>
             <tr>
-              
-                <th>Education</th>
-              
-              <td />
+              <th>Education</th>
+
+              <td>
+                <span>
+                  High School, Centrum Kształcenia Zawodowego i Ustawicznego nr
+                  2, Wadowice, 2016 - 2020
+                </span>
+                <br />
+                IT technician
+              </td>
             </tr>
             <tr>
-              
-                <th>Courses and trainings</th>
-              
-              <td />
+              <th>Courses and trainings</th>
+
+              <td>
+                Object-Oriented JavaScript (Udacity)
+                <br />
+                JavaScript Promises (Udacity)
+                <br />
+                learnyounode (NodeSchool)
+                <br />
+                Automate Daily Development Tasks with Bash (Egghead)
+              </td>
             </tr>
           </table>
         </div>
