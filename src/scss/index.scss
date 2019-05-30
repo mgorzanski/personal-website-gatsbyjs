@@ -1,9 +1,16 @@
 @import '~normalize.css/normalize.css';
 
-@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Fira+Sans:300,400|Roboto+Condensed:300|Roboto:300,400,700&display=swap&subset=latin-ext');
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./../fonts/BebasNeue-regular.eot');
+  src: url('./../fonts/BebasNeue-regular.eot?#iefix') format('embedded-opentype'),
+  url('./../fonts/BebasNeue-regular.woff') format('woff'),
+  url('./../fonts/BebasNeue-regular.ttf') format('truetype'),
+  url('./../fonts/BebasNeue-regular.woff2') format('woff2'),
+  url('./../fonts/BebasNeue-regular.otf') format('opentype');
+}
 
 $primary-color: #0752de;
 $secondary-color: #023491;
@@ -152,7 +159,7 @@ body {
   font-size: 2.5rem;
   color: $secondary-color;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
   padding: 0 0 1.2rem 0;
   margin: 0 0 4.5rem;
   border-bottom: 2px solid $secondary-color;
@@ -179,6 +186,7 @@ body {
   color: #000;
   width: 30%;
   line-height: 2.6rem;
+  font-weight: 300;
 }
 
 .section__fs-container {
@@ -254,6 +262,7 @@ body {
   font-size: 1.7rem;
   color: #000;
   line-height: 2.6rem;
+  font-weight: 300;
 }
 
 .section {
@@ -263,6 +272,7 @@ body {
 
   &#resume {
     margin: 5.5rem 0;
+    overflow: hidden;
 
     &:after {
       clear: both;
@@ -338,7 +348,7 @@ body {
 
     .section__fs-text {
       font-family: 'Roboto', sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       color: $text-primary-color;
       line-height: 3rem;
       margin: 0;
@@ -353,14 +363,14 @@ body {
       color: $text-primary-color;
       font-family: 'Fira Sans', sans-serif;
       font-size: 3rem;
-      font-weight: normal;
+      font-weight: 400;
     }
   }
 }
 
 .contact-informations {
   font-family: 'Roboto', sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       color: $text-primary-color;
       line-height: 3rem;
       margin: 4.5rem 0 0;
@@ -371,7 +381,7 @@ body {
 
 .contact-informations span {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -476,7 +486,7 @@ a {
 .footer__copyright {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.8rem;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 2.5rem;
   color: $text-primary-color;
 }
