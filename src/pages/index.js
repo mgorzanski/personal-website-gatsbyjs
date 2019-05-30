@@ -169,39 +169,56 @@ export default ({ data }) => (
           <h3 className="section__title">Resume</h3>
           <table className="section__table">
             <tr>
-              <td><th>Skills</th></td>
               <td>
-              Tworzenie aplikacji internetowych z wykorzystaniem biblioteki React
-<br />Tworzenie aplikacji mobilnych z wykorzystaniem biblioteki React Native
-<br />Podstawowa znajomość systemu kontroli wersji GIT
-<br />Umiejętność posługiwania się menedżerami pakietów NPM i Yarn oraz menedżerem zadań Webpack
-<br />JavaScript
-<br />Podstawowa znajomość Redux i GraphQL
-<br />Podstawowa znajomość C++
-<br />Podstawowa znajomość PHP i MySQL
-<br />Tworzenie responsywnych stron internetowych z wykorzystaniem HTML5 i CSS3
-<br />Podstawowa znajomość Node.js i MongoDB
-<br />Podstawowa znajomość Linux Bash
-<br />Język angielski – poziom średniozaawansowany
+                <th>Skills</th>
+              </td>
+              <td>
+                Tworzenie aplikacji internetowych z wykorzystaniem biblioteki
+                React
+                <br />
+                Tworzenie aplikacji mobilnych z wykorzystaniem biblioteki React
+                Native
+                <br />
+                Podstawowa znajomość systemu kontroli wersji GIT
+                <br />
+                Umiejętność posługiwania się menedżerami pakietów NPM i Yarn
+                oraz menedżerem zadań Webpack
+                <br />
+                JavaScript
+                <br />
+                Podstawowa znajomość Redux i GraphQL
+                <br />
+                Podstawowa znajomość C++
+                <br />
+                Podstawowa znajomość PHP i MySQL
+                <br />
+                Tworzenie responsywnych stron internetowych z wykorzystaniem
+                HTML5 i CSS3
+                <br />
+                Podstawowa znajomość Node.js i MongoDB
+                <br />
+                Podstawowa znajomość Linux Bash
+                <br />
+                Język angielski – poziom średniozaawansowany
               </td>
             </tr>
             <tr>
               <td>
                 <th>Achievements</th>
               </td>
-              <td></td>
+              <td />
             </tr>
             <tr>
               <td>
                 <th>Education</th>
               </td>
-              <td></td>
+              <td />
             </tr>
             <tr>
               <td>
                 <th>Courses and trainings</th>
               </td>
-              <td></td>
+              <td />
             </tr>
           </table>
         </div>
@@ -210,17 +227,39 @@ export default ({ data }) => (
       <section className="section" id="work">
         <div className="section__inner">
           <h3 className="section__title">Work</h3>
-          <p className="section__text">Here you can see some of my projects. There are more on my GitHub.</p>
+          <p className="section__text">
+            Here you can see some of my projects. There are more on my GitHub.
+          </p>
           <div className="section__columns">
             <div className="section__column">
               <div className="project-link">
-                <img src={PortfolioDevBees} alt="devbees" className="project-image" />
-                <span className="project-image-caption">devbees - team website</span>
+                <img
+                  src={PortfolioDevBees}
+                  alt="devbees"
+                  className="project-image"
+                />
+                <span className="project-image-caption">
+                  devbees - team website
+                </span>
                 <div className="project-links">
                   <p>Website built for a team I'm part of.</p>
-                  <a className="project-link-btn" href="http://sharku.ct8.pl/devbees/" role="button">
-                    <span href="#" className="project-link-btn-text">Open</span>
-                    <svg className="project-link-btn-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
+                  <a
+                    className="project-link-btn"
+                    href="http://sharku.ct8.pl/devbees/"
+                    role="button"
+                  >
+                    <span href="#" className="project-link-btn-text">
+                      Open
+                    </span>
+                    <svg
+                      className="project-link-btn-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -228,13 +267,33 @@ export default ({ data }) => (
 
             <div className="section__column">
               <div className="project-link">
-                <img src={PortfolioDanceHouse} alt="Dance House" className="project-image" />
-                <span className="project-image-caption">Dance House - dance studio</span>
+                <img
+                  src={PortfolioDanceHouse}
+                  alt="Dance House"
+                  className="project-image"
+                />
+                <span className="project-image-caption">
+                  Dance House - dance studio
+                </span>
                 <div className="project-links">
                   <p>Website built for my client.</p>
-                  <a className="project-link-btn" href="http://dancehouse.com.pl/" role="button">
-                    <span href="#" className="project-link-btn-text">Open</span>
-                    <svg className="project-link-btn-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
+                  <a
+                    className="project-link-btn"
+                    href="http://dancehouse.com.pl/"
+                    role="button"
+                  >
+                    <span href="#" className="project-link-btn-text">
+                      Open
+                    </span>
+                    <svg
+                      className="project-link-btn-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -242,30 +301,74 @@ export default ({ data }) => (
 
             <div className="section__column">
               <div className="project-link">
-                <img src={PortfolioToday} alt="Today" className="project-image" />
-                <span className="project-image-caption">Today - an RSS reader web app</span>
+                <img
+                  src={PortfolioToday}
+                  alt="Today"
+                  className="project-image"
+                />
+                <span className="project-image-caption">
+                  Today - an RSS reader web app
+                </span>
                 <div className="project-links">
-                  <p>Built using Laravel 5. Currently I cannot provide a link to the working app.</p>
-                  <a className="project-link-btn" href="https://github.com/mgorzanski/rss-app" role="button">
-                    <span href="#" className="project-link-btn-text">GitHub</span>
-                    <svg className="project-link-btn-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
+                  <p>
+                    Built using Laravel 5. Currently I cannot provide a link to
+                    the working app.
+                  </p>
+                  <a
+                    className="project-link-btn"
+                    href="https://github.com/mgorzanski/rss-app"
+                    role="button"
+                  >
+                    <span href="#" className="project-link-btn-text">
+                      GitHub
+                    </span>
+                    <svg
+                      className="project-link-btn-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z" />
+                    </svg>
                   </a>
                 </div>
               </div>
             </div>
-
-            </div>
-            <div className="section__columns">
-
+          </div>
+          <div className="section__columns">
             <div className="section__column">
               <div className="project-link">
-                <img src={PortfolioPersonalWebsite} alt="Personal website" className="project-image" />
-                <span className="project-image-caption">My old personal website</span>
+                <img
+                  src={PortfolioPersonalWebsite}
+                  alt="Personal website"
+                  className="project-image"
+                />
+                <span className="project-image-caption">
+                  My old personal website
+                </span>
                 <div className="project-links">
-                  <p>My old personal website, builded using GatsbyJS, hosted on Netlify.</p>
-                  <a className="project-link-btn" href="https://github.com/mgorzanski/personal-website" role="button">
-                    <span href="#" className="project-link-btn-text">GitHub</span>
-                    <svg className="project-link-btn-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
+                  <p>
+                    My old personal website, builded using GatsbyJS, hosted on
+                    Netlify.
+                  </p>
+                  <a
+                    className="project-link-btn"
+                    href="https://github.com/mgorzanski/personal-website"
+                    role="button"
+                  >
+                    <span href="#" className="project-link-btn-text">
+                      GitHub
+                    </span>
+                    <svg
+                      className="project-link-btn-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -273,13 +376,33 @@ export default ({ data }) => (
 
             <div className="section__column">
               <div className="project-link">
-                <img src={PortfolioCalendar} alt="Calendar" className="project-image" />
-                <span className="project-image-caption">Calendar desktop app</span>
+                <img
+                  src={PortfolioCalendar}
+                  alt="Calendar"
+                  className="project-image"
+                />
+                <span className="project-image-caption">
+                  Calendar desktop app
+                </span>
                 <div className="project-links">
                   <p>My current project. Coming soon...</p>
-                  <a className="project-link-btn" href="https://github.com/mgorzanski/calendar-app" role="button">
-                    <span href="#" className="project-link-btn-text">GitHub</span>
-                    <svg className="project-link-btn-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
+                  <a
+                    className="project-link-btn"
+                    href="https://github.com/mgorzanski/calendar-app"
+                    role="button"
+                  >
+                    <span href="#" className="project-link-btn-text">
+                      GitHub
+                    </span>
+                    <svg
+                      className="project-link-btn-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -287,13 +410,33 @@ export default ({ data }) => (
 
             <div className="section__column">
               <div className="project-link">
-                <img src={PortfolioPomodoro} alt="devbees" className="project-image" />
-                <span className="project-image-caption">Pomodoro desktop app</span>
+                <img
+                  src={PortfolioPomodoro}
+                  alt="devbees"
+                  className="project-image"
+                />
+                <span className="project-image-caption">
+                  Pomodoro desktop app
+                </span>
                 <div className="project-links">
                   <p>Simple app built using React and Electron</p>
-                  <a className="project-link-btn" href="https://github.com/mgorzanski/pomodoro" role="button">
-                    <span href="#" className="project-link-btn-text">GitHub</span>
-                    <svg className="project-link-btn-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
+                  <a
+                    className="project-link-btn"
+                    href="https://github.com/mgorzanski/pomodoro"
+                    role="button"
+                  >
+                    <span href="#" className="project-link-btn-text">
+                      GitHub
+                    </span>
+                    <svg
+                      className="project-link-btn-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -302,11 +445,22 @@ export default ({ data }) => (
         </div>
 
         <a href="https://github.com/mgorzanski">
-        <div className="section__fs-container">
-          <div className="section__fs-inner">
-            <h2 className="section__fs-title">Visit my GitHub&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" className="section__fs-title-icon"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg></h2>
+          <div className="section__fs-container">
+            <div className="section__fs-inner">
+              <h2 className="section__fs-title">
+                Visit my GitHub&nbsp;&nbsp;&nbsp;
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                  className="section__fs-title-icon"
+                >
+                  <path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z" />
+                </svg>
+              </h2>
+            </div>
           </div>
-        </div>
         </a>
       </section>
 
@@ -318,7 +472,9 @@ export default ({ data }) => (
         <div className="section__fs-container">
           <div className="section__fs-inner">
             <h4 className="section__fs-heading">Contact informations</h4>
-            <p className="section__fs-text">If you want to talk with me look no further.</p>
+            <p className="section__fs-text">
+              If you want to talk with me look no further.
+            </p>
             <span className="contact-informations">
               <span>Email</span>
               gorzanski.mateusz@gmail.com
@@ -330,8 +486,12 @@ export default ({ data }) => (
       </section>
 
       <footer className="footer">
-        <span className="footer__copyright">Copyright &copy; 2019 Mateusz Górzański</span>
-        <span className="footer__right">Running on <a href="https://www.gatsbyjs.org/">GatsbyJS</a></span>
+        <span className="footer__copyright">
+          Copyright &copy; 2019 Mateusz Górzański
+        </span>
+        <span className="footer__right">
+          Running on <a href="https://www.gatsbyjs.org/">GatsbyJS</a>
+        </span>
       </footer>
     </main>
   </>
