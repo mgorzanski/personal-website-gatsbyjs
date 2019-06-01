@@ -18,8 +18,8 @@ export default class Index extends React.Component {
 
     this.state = {
       menuHidden: true,
-      jobOffers: true
-    }
+      jobOffers: true,
+    };
   }
 
   render() {
@@ -34,7 +34,9 @@ export default class Index extends React.Component {
             </div>
             <div
               className="header__menu-trigger"
-              onClick={() => (this.setState({ menuHidden: !this.state.menuHidden }))}
+              onClick={() =>
+                this.setState({ menuHidden: !this.state.menuHidden })
+              }
             >
               <span>Navigation</span>
               <svg
@@ -62,22 +64,38 @@ export default class Index extends React.Component {
                 </Link>
               </li>
               <li className="header__menu-item">
-                <a className="header__menu-item-link" href="#about-me">
+                <a
+                  className="header__menu-item-link"
+                  href="#about-me"
+                  onClick={() => this.setState({ menuHidden: true })}
+                >
                   About
                 </a>
               </li>
               <li className="header__menu-item">
-                <a className="header__menu-item-link" href="#resume">
+                <a
+                  className="header__menu-item-link"
+                  href="#resume"
+                  onClick={() => this.setState({ menuHidden: true })}
+                >
                   Resume
                 </a>
               </li>
               <li className="header__menu-item">
-                <a className="header__menu-item-link" href="#work">
+                <a
+                  className="header__menu-item-link"
+                  href="#work"
+                  onClick={() => this.setState({ menuHidden: true })}
+                >
                   Work
                 </a>
               </li>
               <li className="header__menu-item">
-                <a className="header__menu-item-link" href="#contact">
+                <a
+                  className="header__menu-item-link"
+                  href="#contact"
+                  onClick={() => this.setState({ menuHidden: true })}
+                >
                   Contact
                 </a>
               </li>
