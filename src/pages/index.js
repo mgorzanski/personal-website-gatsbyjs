@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+
+import SEO from './../components/seo';
 import './../scss/index.scss';
 import thumbnail from './../images/thumbnail.png';
 
@@ -25,6 +27,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <>
+      <SEO title={this.props.data.site.siteMetadata.title} />
         <header className="header">
           <nav className="header__nav">
             <div className="header__site-logo">
@@ -574,4 +577,12 @@ export default class Index extends React.Component {
   }
 }
 
-//export const query = graphql``;
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
