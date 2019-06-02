@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: `Mateusz Górzański`,
-    description: ``,
-    author: ``
+    description: `My personal website`,
+    author: `@gorzanski`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,6 +33,7 @@ module.exports = {
         background_color: `#0752de`,
         theme_color: `#0752de`,
         display: `minimal-ui`,
+        icon: 'src/images/icons/android-chrome-512x512.png'
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
