@@ -1,3 +1,4 @@
+@import './layout.scss'; // it was actually my mistake that I need this file now... (without changing whole css)
 @import '~normalize.css/normalize.css';
 
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Fira+Sans:300,400|Roboto+Condensed:300|Roboto:300,400,700&display=swap&subset=latin-ext');
@@ -207,14 +208,12 @@ body {
 
 .section__inner {
   margin: 0 4.5rem;
+  box-sizing: border-box;
 }
 
 .section__inner--left-float {
   order: 1;
-}
-
-.section__float-image {
-  width: 100%;
+  box-sizing: border-box;
 }
 
 .section__columns {
@@ -230,6 +229,7 @@ body {
   width: 100%;
   line-height: 2.6rem;
   font-weight: 300;
+  margin: 0 0 14.5px;
 }
 
 .section__fs-container {
