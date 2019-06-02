@@ -6,14 +6,6 @@ import SEO from './../components/seo';
 import './../scss/index.scss';
 import thumbnail from './../images/thumbnail.png';
 
-import PolandFlagIcon from './../images/icons/poland-flag.png';
-import PortfolioDevBees from './../images/portfolio/devbees.png';
-import PortfolioDanceHouse from './../images/portfolio/dance-house.png';
-import PortfolioToday from './../images/portfolio/rss-app.png';
-import PortfolioPersonalWebsite from './../images/portfolio/matgor.png';
-import PortfolioCalendar from './../images/portfolio/calendar-app.png';
-import PortfolioPomodoro from './../images/portfolio/pomodoro.png';
-
 export default class Index extends React.Component {
   constructor(props) {
     super(props);
@@ -27,7 +19,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <>
-      <SEO title={this.props.data.site.siteMetadata.title} />
+        <SEO title={this.props.data.site.siteMetadata.title} />
         <header className="header">
           <nav className="header__nav">
             <div className="header__site-logo">
@@ -106,8 +98,8 @@ export default class Index extends React.Component {
             <ul className="header__links-menu">
               <li className="header__links-menu-item">
                 <Link to="/" className="header__links-menu-item-link">
-                  <img
-                    src={PolandFlagIcon}
+                  <Img
+                    fixed={this.props.data.PolandFlagIcon.childImageSharp.fixed}
                     alt="Flaga polski"
                     className="header__links-menu-item-icon"
                   />
@@ -311,8 +303,8 @@ export default class Index extends React.Component {
               <div className="section__columns">
                 <div className="section__column">
                   <div className="project-link">
-                    <img
-                      src={PortfolioDevBees}
+                    <Img
+                      fluid={this.props.data.devbees.childImageSharp.fluid}
                       alt="devbees"
                       className="project-image"
                     />
@@ -345,8 +337,8 @@ export default class Index extends React.Component {
 
                 <div className="section__column">
                   <div className="project-link">
-                    <img
-                      src={PortfolioDanceHouse}
+                    <Img
+                      fluid={this.props.data.dancehouse.childImageSharp.fluid}
                       alt="Dance House"
                       className="project-image"
                     />
@@ -379,8 +371,8 @@ export default class Index extends React.Component {
 
                 <div className="section__column">
                   <div className="project-link">
-                    <img
-                      src={PortfolioToday}
+                    <Img
+                      fluid={this.props.data.today.childImageSharp.fluid}
                       alt="Today"
                       className="project-image"
                     />
@@ -417,8 +409,10 @@ export default class Index extends React.Component {
               <div className="section__columns">
                 <div className="section__column">
                   <div className="project-link">
-                    <img
-                      src={PortfolioPersonalWebsite}
+                    <Img
+                      fluid={
+                        this.props.data.personalwebsite.childImageSharp.fluid
+                      }
                       alt="Personal website"
                       className="project-image"
                     />
@@ -454,8 +448,8 @@ export default class Index extends React.Component {
 
                 <div className="section__column">
                   <div className="project-link">
-                    <img
-                      src={PortfolioCalendar}
+                    <Img
+                      fluid={this.props.data.calendar.childImageSharp.fluid}
                       alt="Calendar"
                       className="project-image"
                     />
@@ -488,8 +482,8 @@ export default class Index extends React.Component {
 
                 <div className="section__column">
                   <div className="project-link">
-                    <img
-                      src={PortfolioPomodoro}
+                    <Img
+                      fluid={this.props.data.pomodoro.childImageSharp.fluid}
                       alt="devbees"
                       className="project-image"
                     />
@@ -562,16 +556,16 @@ export default class Index extends React.Component {
               </div>
             </div>
           </section>
-
-          <footer className="footer">
-            <span className="footer__copyright">
-              Copyright &copy; 2019 Mateusz Górzański
-            </span>
-            <span className="footer__right">
-              Running on <a href="https://www.gatsbyjs.org/">GatsbyJS</a>
-            </span>
-          </footer>
         </main>
+
+        <footer className="footer">
+          <span className="footer__copyright">
+            Copyright &copy; 2019 Mateusz Górzański
+          </span>
+          <span className="footer__right">
+            Running on <a href="https://www.gatsbyjs.org/">GatsbyJS</a>
+          </span>
+        </footer>
       </>
     );
   }
@@ -582,6 +576,62 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+
+    PolandFlagIcon: file(relativePath: { eq: "icons/poland-flag.png" }) {
+      childImageSharp {
+        fixed(width: 32) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+
+    devbees: file(relativePath: { eq: "portfolio/devbees.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    dancehouse: file(relativePath: { eq: "portfolio/dance-house.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    today: file(relativePath: { eq: "portfolio/rss-app.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    personalwebsite: file(relativePath: { eq: "portfolio/matgor.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    calendar: file(relativePath: { eq: "portfolio/calendar-app.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    pomodoro: file(relativePath: { eq: "portfolio/pomodoro.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }
