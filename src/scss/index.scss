@@ -29,6 +29,18 @@ body {
   font-size: 1.6rem;
 }
 
+#gatsby-noscript {
+  background: #e4ce09;
+  text-align: center;
+  color: #000;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
 // Extra small devices (portrait phones, less than 576px)
 .header {
   display: grid;
@@ -230,6 +242,10 @@ body {
   line-height: 2.6rem;
   font-weight: 300;
   margin: 0 0 14.5px;
+}
+
+.section__column-profile-photo {
+  width: 50%;
 }
 
 .section__fs-container {
@@ -602,6 +618,10 @@ a {
 
   .project-link-btn {
     margin: 1.2rem 24rem 0;
+  }
+
+  .section__column-profile-photo {
+    width: 35%;
   }
 }
 
