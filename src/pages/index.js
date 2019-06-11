@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 
 import SEO from './../components/seo';
 import './../scss/index.scss';
-import thumbnail from './../images/thumbnail.png';
+// import thumbnail from './../images/thumbnail.png';
 
 export default class Index extends React.Component {
   constructor(props) {
@@ -136,10 +136,11 @@ export default class Index extends React.Component {
           </section>
 
           <section className="section" id="resume">
-            <div className="section__left-float-featured-image">
+            {/* <div className="section__left-float-featured-image">
               <img src={thumbnail} alt="#" className="section__float-image" />
-            </div>
-            <div className="section__inner section__inner--left-float">
+            </div> */}
+            {/* <div className="section__inner section__inner--left-float"> */}
+            <div className="section__inner">
               <h3 className="section__title">Resume</h3>
               <table className="section__table">
                 <tbody>
